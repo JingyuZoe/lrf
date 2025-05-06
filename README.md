@@ -79,7 +79,7 @@ lrf/
 ---
 
 ## 📄 License
-UQ License
+MIT License
 
 ---
 

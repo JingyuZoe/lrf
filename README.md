@@ -84,4 +84,5 @@ MIT License
 ---
 
 ## 👤 Author
-[Jingyu Zoe] – PhD Candidate
+[Jingyu Ge] – PhD Candidate
+[Shuting Wang] – PhD Candidate

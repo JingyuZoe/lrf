@@ -92,6 +92,6 @@ def time_dependent_response(T0, h_0, alpha, kappa, S, dt=1.0):
     stretched_h0 = h_interp(stretched_t)
 
     # Apply exponential amplitude decay
-    h = stretched_h0 * np.exp(-alpha * S)
+    h = stretched_h0 * np.exp(alpha * S)
 
     return h

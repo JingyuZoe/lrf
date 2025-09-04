@@ -23,7 +23,7 @@ def compute_saturation(rainfall, beta):
     """
     S = np.zeros_like(rainfall)
     for t in range(1, len(rainfall)):
-        S[t] = beta * S[t - 1] + (1 - beta) * rainfall[t]
+        S[t] = beta * S[t - 1] + (1 - beta) * rainfall[t-1]
     return S
 
 

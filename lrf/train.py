@@ -228,7 +228,7 @@ def get_default_model_config(T0_init=120, n_points=12, k=3):
 
     # === Other parameters ===
     beta_init = 0.4
-    alpha_init = -0.5
+    alpha_init = 0.5
     gamma_init = 10
     S_th_init = 0.12
 
@@ -239,7 +239,7 @@ def get_default_model_config(T0_init=120, n_points=12, k=3):
     T0_bounds = (24, 150)
     c_bounds = [(0, 1)] * len(c_init)
     beta_bounds = (0.4, 0.99)
-    alpha_bounds = (-5, 0)
+    alpha_bounds = (0, 5)
     gamma_bounds = (5, 30)
     S_th_bounds = (0.05, 0.5)
 

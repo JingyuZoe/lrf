@@ -1,18 +1,24 @@
 # Learnable Response Function (LRF)
 
-A Python package for simulating and training dynamic rainfall-derived inflow and infiltration (RDII) models using learnable and adaptive response functions.
+## 💡 Overview
+📑This repository accompanies the paper "A Simple Model for Long-Term Prediction of Sewage Flow in a Changing Climate"
 
----
+📈Rainfall-derived inflow and infiltration (RDII) is a major contributor to variability in sewage flow, particularly under the increasing frequency of extreme weather events driven by climate change . The developed RDII model simulates the response of sewer systems to rainfall-induced inflow, demonstrating strong potential for predicting long-term sewage dynamics.
 
-## 📦 Features
-- B-spline-based response function with learnable control points
-- Saturation-dependent dynamic response adjustment via \( \kappa(S) \)
-- Multi-phase training strategy with user-defined optimization masks
-- Simple and extensible API for simulation and training
+🧩This repository introduces the Learnable Response Function (LRF), the fundamental modelling framework, with the RDII model provided as a quickstart example [here](example_application.ipynb).
 
----
 
-## 📁 Installation
+
+
+## ✨ Highlights
+- **Automatic** learning of response function based on B-spline
+- **Adaptive** response adjustment mechanism based on latest data
+- **Advanced** multi-phase optimization featuring tailored regularization
+- **Simple** and **extensible** API for beginners
+
+
+
+## ⚙️ Installation
 
 ### Option 1: Install from GitHub
 ```bash
@@ -25,7 +31,7 @@ Clone this repo and run:
 pip install -e .
 ```
 
----
+
 
 ## 🚀 Quick Start
 
@@ -66,23 +72,28 @@ params_opt, log = fit_lrf_model(
 
 ---
 
-## 📂 Files and Structure
-```
-lrf/
-├── model.py           # simulate_rdii logic
-├── response.py        # b-spline response + dynamic κ(S)
-├── train.py           # training with custom loss + phase strategy
-├── utils.py           # helper functions (e.g., generate_s)
-└── __init__.py
-```
+## 📚Tutorial
 
----
+Get started with [example_application.ipynb](./example_application.ipynb) notebook.
+
+
+## 📂 File Structure
+
+**lrf** — Core module implementing LRF simulation, response modeling, training, and utilities.
+
+| File           | Description |
+|----------------|-------------|
+| `model.py`     | Implements the core `simulate_rdii` logic. |
+| `response.py`  | Computes B-spline responses and dynamic κ(S). |
+| `train.py`     | Training pipeline with custom loss and phased strategy. |
+| `utils.py`     | Helper functions (e.g., `generate_s`). |
+| `__init__.py`  | Initializes the `lrf` package. |
+
+**Note:** Files are organized by functionality to simplify maintenance and future extensions.
+
+
+## 👤 Contact
+If you have any questions, please reach out to Jingyu Ge at jingyu.ge@uq.edu.au
 
 ## 📄 License
-MIT License
-
----
-
-## 👤 Author
-[Jingyu Ge] – PhD Candidate
-[Shuting Wang] – PhD Candidate
+This project is licensed under the [MIT License](LICENSE.txt).

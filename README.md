@@ -20,7 +20,7 @@
 
 ## ⚙️ Installation
 
-**Pre-requisites:**
+**Pre-requisites**
 ```
 Python 3.9.7 or higher
 pip

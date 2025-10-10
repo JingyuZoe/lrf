@@ -20,22 +20,30 @@
 
 ## ⚙️ Installation
 
-### Option 1: Install from GitHub
+**Pre-requisites:**
+```
+Python 3.9.7 or higher
+pip
+```
+
+**Installation via github**
 ```bash
 pip install git+https://github.com/JingyuZoe/lrf.git
 ```
 
-### Option 2: Local install
-Clone this repo and run:
+**For developers**
+
 ```bash
-pip install -e .
+git clone https://github.com/JingyuZoe/lrf.git   # Clone this repo
+cd lrf                                           # Go to the directory
+pip install -e .                                 # Install the package in editable mode
 ```
 
 
 
 ## 🚀 Quick Start
 
-### Example Simulation
+**Example Simulation**
 ```python
 from lrf import simulate_rdii, generate_s
 
@@ -54,7 +62,7 @@ params = {
 II = simulate_rdii(R, S, params)
 ```
 
-### Training with Real Data
+**Training with Real Data**
 ```python
 from lrf import fit_lrf_model, get_default_strategy
 
@@ -72,12 +80,12 @@ params_opt, log = fit_lrf_model(
 
 ---
 
-## 📚Tutorial
+## 📚 Tutorial
 
 Get started with [example_application.ipynb](./example_application.ipynb) notebook.
 
 
-## 📂 File Structure
+## 🗂️ File Structure
 
 **lrf** — Core module implementing LRF simulation, response modeling, training, and utilities.
 
@@ -92,8 +100,8 @@ Get started with [example_application.ipynb](./example_application.ipynb) notebo
 **Note:** Files are organized by functionality to simplify maintenance and future extensions.
 
 
-## 👤 Contact
+## ✉️ Contact
 If you have any questions, please reach out to Jingyu Ge at jingyu.ge@uq.edu.au
 
-## 📄 License
+## ⚖️ License
 This project is licensed under the [MIT License](LICENSE.txt).

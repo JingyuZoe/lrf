@@ -1,7 +1,7 @@
 # Learnable Response Function (LRF)
 
 ## 💡 Overview
-📑This repository accompanies the paper "A Simple Model for Long-Term Prediction of Sewage Flow in a Changing Climate"
+📑This repository accompanies the paper "A Simple Model for Long-Term Prediction of Sewage Flow in a Changing Climate" https://doi.org/10.1016/j.watres.2026.125359
 
 📈Rainfall-derived inflow and infiltration (RDII) is a major contributor to variability in sewage flow, particularly under the increasing frequency of extreme weather events driven by climate change . The developed RDII model simulates the response of sewer systems to rainfall-induced inflow, demonstrating strong potential for predicting long-term sewage dynamics.
 
